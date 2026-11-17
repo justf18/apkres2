@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="3dp">
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#202124"
+                android:id="@+id/tvSubjectTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Mata Pelajaran"/>
+            <TextView
+                android:textSize="12sp"
+                android:textColor="#5f6368"
+                android:id="@+id/tvSubjectClassTarget"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Target Kelas"/>
+        </LinearLayout>
+        <Button
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:id="@+id/btnStartExamItem"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:text="Kerjakan"
+            android:backgroundTint="#1a73e8"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

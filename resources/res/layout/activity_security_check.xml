@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#f5f7fa"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:filterTouchesWhenObscured="true">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#1f2937"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Pemeriksaan Keamanan Perangkat"/>
+        <TextView
+            android:textSize="14sp"
+            android:textColor="#4b5563"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Pastikan semua persyaratan hijau sebelum masuk ujian:"/>
+        <TextView
+            android:textSize="15sp"
+            android:id="@+id/tvStatusKeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+        <Button
+            android:id="@+id/btnFixKeyboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Pilih Simple Keyboard"/>
+        <TextView
+            android:textSize="15sp"
+            android:id="@+id/tvStatusOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+        <Button
+            android:id="@+id/btnFixOverlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Matikan Izin Floating Apps"/>
+        <TextView
+            android:textSize="15sp"
+            android:id="@+id/tvStatusDnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+        <Button
+            android:id="@+id/btnFixDnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Aktifkan Mode Jangan Ganggu"/>
+        <Button
+            android:id="@+id/btnFixWriteSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Izinkan Pengaturan Sistem (Kecerahan)"/>
+        <TextView
+            android:textSize="15sp"
+            android:id="@+id/tvStatusVpn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+        <TextView
+            android:textSize="15sp"
+            android:id="@+id/tvStatusDevMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"/>
+        <TextView
+            android:textSize="15sp"
+            android:id="@+id/tvStatusAccessibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+        <Button
+            android:id="@+id/btnFixAccessibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Izinkan Akses Penggunaan Data"/>
+        <TextView
+            android:textSize="15sp"
+            android:id="@+id/tvStatusPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"/>
+        <Button
+            android:id="@+id/btnPinApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:text="Sematkan Aplikasi (Pin App)"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnRefresh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Cek Ulang"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                style="?attr/materialButtonOutlinedStyle"/>
+            <Button
+                android:enabled="false"
+                android:id="@+id/btnProceed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Lanjutkan Ujian"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

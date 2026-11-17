@@ -1,0 +1,40 @@
+package androidx.compose.material3;
+
+import androidx.autofill.HintConstants;
+import androidx.compose.p000ui.unit.C1956Dp;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import kotlin.Metadata;
+
+/* compiled from: DateRangeInput.kt */
+@Metadata(m164d1 = {"\u0000D\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a\u0085\u0001\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u00062\b\u0010\u0007\u001a\u0004\u0018\u00010\u00062:\u0010\b\u001a6\u0012\u0015\u0012\u0013\u0018\u00010\u0006¢\u0006\f\b\n\u0012\b\b\u000b\u0012\u0004\b\b(\f\u0012\u0015\u0012\u0013\u0018\u00010\u0006¢\u0006\f\b\n\u0012\b\b\u000b\u0012\u0004\b\b(\r\u0012\u0004\u0012\u00020\u00040\t2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u0017H\u0001¢\u0006\u0002\u0010\u0018\"\u0010\u0010\u0000\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0004\n\u0002\u0010\u0002¨\u0006\u0019"}, m165d2 = {"TextFieldSpacing", "Landroidx/compose/ui/unit/Dp;", "F", "DateRangeInputContent", "", "selectedStartDateMillis", "", "selectedEndDateMillis", "onDatesSelectionChange", "Lkotlin/Function2;", "Lkotlin/ParameterName;", HintConstants.AUTOFILL_HINT_NAME, "startDateMillis", "endDateMillis", "calendarModel", "Landroidx/compose/material3/CalendarModel;", "yearRange", "Lkotlin/ranges/IntRange;", "dateFormatter", "Landroidx/compose/material3/DatePickerFormatter;", "selectableDates", "Landroidx/compose/material3/SelectableDates;", "colors", "Landroidx/compose/material3/DatePickerColors;", "(Ljava/lang/Long;Ljava/lang/Long;Lkotlin/jvm/functions/Function2;Landroidx/compose/material3/CalendarModel;Lkotlin/ranges/IntRange;Landroidx/compose/material3/DatePickerFormatter;Landroidx/compose/material3/SelectableDates;Landroidx/compose/material3/DatePickerColors;Landroidx/compose/runtime/Composer;I)V", "material3_release"}, m166k = 2, m167mv = {1, 8, 0}, m169xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+/* loaded from: classes.dex */
+public final class DateRangeInputKt {
+    private static final float TextFieldSpacing = C1956Dp.m6297constructorimpl(8);
+
+    /* JADX WARN: Removed duplicated region for block: B:102:0x025a  */
+    /* JADX WARN: Removed duplicated region for block: B:103:0x025e  */
+    /* JADX WARN: Removed duplicated region for block: B:114:0x0340  */
+    /* JADX WARN: Removed duplicated region for block: B:115:0x0342  */
+    /* JADX WARN: Removed duplicated region for block: B:118:0x034b  */
+    /* JADX WARN: Removed duplicated region for block: B:119:0x034d  */
+    /* JADX WARN: Removed duplicated region for block: B:122:0x035d  */
+    /* JADX WARN: Removed duplicated region for block: B:126:0x036b  */
+    /* JADX WARN: Removed duplicated region for block: B:130:0x041a  */
+    /* JADX WARN: Removed duplicated region for block: B:131:0x041c  */
+    /* JADX WARN: Removed duplicated region for block: B:134:0x0422  */
+    /* JADX WARN: Removed duplicated region for block: B:137:0x042d  */
+    /* JADX WARN: Removed duplicated region for block: B:141:0x043a  */
+    /* JADX WARN: Removed duplicated region for block: B:144:0x04ab  */
+    /* JADX WARN: Removed duplicated region for block: B:99:0x024e  */
+    /*
+        Code decompiled incorrectly, please refer to instructions dump.
+        To view partially-correct code enable 'Show inconsistent code' option in preferences
+    */
+    public static final void DateRangeInputContent(final java.lang.Long r52, final java.lang.Long r53, final kotlin.jvm.functions.Function2<? super java.lang.Long, ? super java.lang.Long, kotlin.Unit> r54, final androidx.compose.material3.CalendarModel r55, final kotlin.ranges.IntRange r56, final androidx.compose.material3.DatePickerFormatter r57, final androidx.compose.material3.SelectableDates r58, final androidx.compose.material3.DatePickerColors r59, androidx.compose.runtime.Composer r60, final int r61) {
+        /*
+            Method dump skipped, instructions count: 1232
+            To view this dump change 'Code comments level' option to 'DEBUG'
+        */
+        throw new UnsupportedOperationException("Method not decompiled: androidx.compose.material3.DateRangeInputKt.DateRangeInputContent(java.lang.Long, java.lang.Long, kotlin.jvm.functions.Function2, androidx.compose.material3.CalendarModel, kotlin.ranges.IntRange, androidx.compose.material3.DatePickerFormatter, androidx.compose.material3.SelectableDates, androidx.compose.material3.DatePickerColors, androidx.compose.runtime.Composer, int):void");
+    }
+}

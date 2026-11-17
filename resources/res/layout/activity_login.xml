@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f4f6f9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp">
+            <ImageView
+                android:id="@+id/imgLogoSekolah"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/logo_sekolah"
+                android:adjustViewBounds="true"
+                android:contentDescription="Logo SMAN 1 Jakarta"/>
+            <TextView
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#1a73e8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="APLIKASI UJIAN"
+                android:letterSpacing="0.1"/>
+            <TextView
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#202124"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="SMA NEGERI 1 JAKARTA"/>
+            <TextView
+                android:textSize="13sp"
+                android:textColor="#5f6368"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Pilih Angkatan Server &amp; Masukkan Akses"/>
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#ffffff"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:background="@drawable/bg_highlight_spinner"
+                    android:padding="14dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp">
+                    <TextView
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:textColor="#1a73e8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:text="✅ PILIH KELAS"/>
+                    <Spinner
+                        android:id="@+id/spTingkat"
+                        android:background="@drawable/bg_spinner_inner"
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:paddingEnd="12dp"/>
+                </LinearLayout>
+                <TextView
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#3c4043"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:text="NISN Siswa"/>
+                <EditText
+                    android:textSize="14sp"
+                    android:id="@+id/etNisn"
+                    android:background="@drawable/bg_input_field"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="16dp"
+                    android:hint="Contoh: 00123456777"
+                    android:inputType="number"
+                    android:paddingHorizontal="16dp"/>
+                <TextView
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#3c4043"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:text="Password"/>
+                <EditText
+                    android:textSize="14sp"
+                    android:id="@+id/etPassword"
+                    android:background="@drawable/bg_input_field"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginBottom="24dp"
+                    android:hint="Masukkan Password"
+                    android:inputType="textPassword"
+                    android:paddingHorizontal="16dp"/>
+                <Button
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:text="MASUK PORTAL"
+                    android:backgroundTint="#1a73e8"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:textSize="12sp"
+            android:textColor="#9aa0a6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="1.0 SMAN 1 JAKARTA"/>
+    </LinearLayout>
+</ScrollView>

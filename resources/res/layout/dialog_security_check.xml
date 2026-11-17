@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#202124"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Verifikasi Lingkungan Ujian"/>
+        <TextView
+            android:textSize="12sp"
+            android:textColor="#5f6368"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Pastikan seluruh indikator berwarna hijau sebelum melanjutkan:"/>
+        <TextView
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:id="@+id/tvStatusKeyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Memeriksa Simple Keyboard..."/>
+        <Button
+            android:textSize="12sp"
+            android:id="@+id/btnFixKeyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginBottom="12dp"
+            android:text="Aktifkan Simple Keyboard"/>
+        <TextView
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:id="@+id/tvStatusOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Memeriksa Floating Apps..."/>
+        <Button
+            android:textSize="12sp"
+            android:id="@+id/btnFixOverlay"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_marginBottom="12dp"
+            android:text="Pengaturan Overlay"/>
+        <TextView
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:id="@+id/tvStatusVpn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Memeriksa VPN..."/>
+        <TextView
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:id="@+id/tvStatusDevMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Memeriksa Opsi Pengembang..."/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnRefresh"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Cek Ulang"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                style="?attr/materialButtonOutlinedStyle"/>
+            <Button
+                android:enabled="false"
+                android:id="@+id/btnProceed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Lanjut Ujian"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

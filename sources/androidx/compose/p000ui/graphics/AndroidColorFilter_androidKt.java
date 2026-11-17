@@ -1,0 +1,65 @@
+package androidx.compose.p000ui.graphics;
+
+import android.graphics.BlendModeColorFilter;
+import android.graphics.ColorFilter;
+import android.graphics.ColorMatrixColorFilter;
+import android.graphics.LightingColorFilter;
+import android.graphics.PorterDuffColorFilter;
+import android.os.Build;
+import androidx.constraintlayout.core.motion.utils.TypedValues;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import kotlin.Metadata;
+
+/* compiled from: AndroidColorFilter.android.kt */
+@Metadata(m164d1 = {"\u00004\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u001a\u001e\u0010\u0000\u001a\u00060\u0001j\u0002`\u00022\u0006\u0010\u0003\u001a\u00020\u0004H\u0000ø\u0001\u0000¢\u0006\u0004\b\u0005\u0010\u0006\u001a\u0019\u0010\u0007\u001a\u00020\u00042\n\u0010\b\u001a\u00060\u0001j\u0002`\u0002H\u0000¢\u0006\u0002\u0010\t\u001a&\u0010\n\u001a\u00060\u0001j\u0002`\u00022\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\fH\u0000ø\u0001\u0000¢\u0006\u0004\b\u000e\u0010\u000f\u001a&\u0010\u0010\u001a\u00060\u0001j\u0002`\u00022\u0006\u0010\u0011\u001a\u00020\f2\u0006\u0010\u0012\u001a\u00020\u0013H\u0000ø\u0001\u0000¢\u0006\u0004\b\u0014\u0010\u0015\u001a\b\u0010\u0016\u001a\u00020\u0017H\u0000\u001a\b\u0010\u0018\u001a\u00020\u0017H\u0000\u001a\n\u0010\u0019\u001a\u00020\u0001*\u00020\u001a\u001a\n\u0010\u001b\u001a\u00020\u001a*\u00020\u0001*\f\b\u0000\u0010\u001c\"\u00020\u00012\u00020\u0001\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u0006\u001d"}, m165d2 = {"actualColorMatrixColorFilter", "Landroid/graphics/ColorFilter;", "Landroidx/compose/ui/graphics/NativeColorFilter;", "colorMatrix", "Landroidx/compose/ui/graphics/ColorMatrix;", "actualColorMatrixColorFilter-jHG-Opc", "([F)Landroid/graphics/ColorFilter;", "actualColorMatrixFromFilter", "filter", "(Landroid/graphics/ColorFilter;)[F", "actualLightingColorFilter", "multiply", "Landroidx/compose/ui/graphics/Color;", "add", "actualLightingColorFilter--OWjLjI", "(JJ)Landroid/graphics/ColorFilter;", "actualTintColorFilter", TypedValues.Custom.S_COLOR, "blendMode", "Landroidx/compose/ui/graphics/BlendMode;", "actualTintColorFilter-xETnrds", "(JI)Landroid/graphics/ColorFilter;", "supportsColorMatrixQuery", "", "supportsLightingColorFilterQuery", "asAndroidColorFilter", "Landroidx/compose/ui/graphics/ColorFilter;", "asComposeColorFilter", "NativeColorFilter", "ui-graphics_release"}, m166k = 2, m167mv = {1, 8, 0}, m169xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+/* loaded from: classes.dex */
+public final class AndroidColorFilter_androidKt {
+    public static final ColorFilter asAndroidColorFilter(ColorFilter $this$asAndroidColorFilter) {
+        return $this$asAndroidColorFilter.getNativeColorFilter();
+    }
+
+    public static final ColorFilter asComposeColorFilter(ColorFilter colorFilter) {
+        if (29 <= Build.VERSION.SDK_INT && (colorFilter instanceof BlendModeColorFilter)) {
+            return BlendModeColorFilterHelper.INSTANCE.createBlendModeColorFilter((BlendModeColorFilter) colorFilter);
+        }
+        if ((colorFilter instanceof LightingColorFilter) && supportsLightingColorFilterQuery()) {
+            return new LightingColorFilter(ColorKt.Color(((LightingColorFilter) colorFilter).getColorMultiply()), ColorKt.Color(((LightingColorFilter) colorFilter).getColorAdd()), colorFilter, null);
+        }
+        return ((colorFilter instanceof ColorMatrixColorFilter) && supportsColorMatrixQuery()) ? new ColorMatrixColorFilter(null, colorFilter, 0 == true ? 1 : 0) : new ColorFilter(colorFilter);
+    }
+
+    /* renamed from: actualTintColorFilter-xETnrds, reason: not valid java name */
+    public static final ColorFilter m3815actualTintColorFilterxETnrds(long color, int blendMode) {
+        if (Build.VERSION.SDK_INT >= 29) {
+            ColorFilter androidColorFilter = BlendModeColorFilterHelper.INSTANCE.m3895BlendModeColorFilterxETnrds(color, blendMode);
+            return androidColorFilter;
+        }
+        ColorFilter androidColorFilter2 = new PorterDuffColorFilter(ColorKt.m4003toArgb8_81llA(color), AndroidBlendMode_androidKt.m3801toPorterDuffModes9anfk8(blendMode));
+        return androidColorFilter2;
+    }
+
+    /* renamed from: actualColorMatrixColorFilter-jHG-Opc, reason: not valid java name */
+    public static final ColorFilter m3813actualColorMatrixColorFilterjHGOpc(float[] colorMatrix) {
+        return new ColorMatrixColorFilter(colorMatrix);
+    }
+
+    /* renamed from: actualLightingColorFilter--OWjLjI, reason: not valid java name */
+    public static final ColorFilter m3814actualLightingColorFilterOWjLjI(long multiply, long add) {
+        return new LightingColorFilter(ColorKt.m4003toArgb8_81llA(multiply), ColorKt.m4003toArgb8_81llA(add));
+    }
+
+    public static final float[] actualColorMatrixFromFilter(ColorFilter filter) {
+        if ((filter instanceof ColorMatrixColorFilter) && supportsColorMatrixQuery()) {
+            return ColorMatrixFilterHelper.INSTANCE.m4029getColorMatrix8unuwjk((ColorMatrixColorFilter) filter);
+        }
+        throw new IllegalArgumentException("Unable to obtain ColorMatrix from Android ColorMatrixColorFilter. This method was invoked on an unsupported Android version");
+    }
+
+    public static final boolean supportsColorMatrixQuery() {
+        return 26 <= Build.VERSION.SDK_INT;
+    }
+
+    public static final boolean supportsLightingColorFilterQuery() {
+        return 26 <= Build.VERSION.SDK_INT;
+    }
+}

@@ -1,0 +1,17 @@
+package androidx.compose.p000ui.semantics;
+
+import androidx.compose.p000ui.Modifier;
+import androidx.compose.p000ui.node.SemanticsModifierNode;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import kotlin.Metadata;
+
+/* compiled from: SemanticsModifier.kt */
+@Metadata(m164d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\b\u0000\u0018\u00002\u00020\u00012\u00020\u0002B\u0005¢\u0006\u0002\u0010\u0003J\f\u0010\u0004\u001a\u00020\u0005*\u00020\u0006H\u0016¨\u0006\u0007"}, m165d2 = {"Landroidx/compose/ui/semantics/EmptySemanticsModifier;", "Landroidx/compose/ui/Modifier$Node;", "Landroidx/compose/ui/node/SemanticsModifierNode;", "()V", "applySemantics", "", "Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;", "ui_release"}, m166k = 1, m167mv = {1, 8, 0}, m169xi = ConstraintLayout.LayoutParams.Table.LAYOUT_CONSTRAINT_VERTICAL_CHAINSTYLE)
+/* loaded from: classes.dex */
+public final class EmptySemanticsModifier extends Modifier.Node implements SemanticsModifierNode {
+    public static final int $stable = 0;
+
+    @Override // androidx.compose.p000ui.node.SemanticsModifierNode
+    public void applySemantics(SemanticsPropertyReceiver $this$applySemantics) {
+    }
+}

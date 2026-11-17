@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#ff000000"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#ffff0000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="APLIKASI TERKUNCI (PELANGGARAN)"/>
+    <TextView
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Masukkan password untuk mengembalikan HP dan mematikan alarm:"/>
+    <EditText
+        android:textColor="#000000"
+        android:id="@+id/etFreezeExitPassword"
+        android:background="#ffffff"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Password Keluar Ujian"
+        android:inputType="textPassword"/>
+    <Button
+        android:textColor="#ffffff"
+        android:id="@+id/btnFreezeUnlock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Buka Kunci &amp; Matikan Alarm"
+        android:backgroundTint="#ff0000"/>
+</LinearLayout>
